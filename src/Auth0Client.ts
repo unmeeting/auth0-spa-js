@@ -260,7 +260,8 @@ export default class Auth0Client {
    * Opens a popup with the `/authorize` URL using the parameters
    * provided as arguments. Random and secure `state` and `nonce`
    * parameters will be auto-generated. If the response is successful,
-   * results will be valid according to their expiration times.
+   * results will be valid according to their expiration times. Returns
+   * the code state field.
    *
    * IMPORTANT: This method has to be called from an event handler
    * that was started by the user like a button click, for example,
@@ -329,6 +330,7 @@ export default class Auth0Client {
     this.cache.save(cacheEntry);
 
     ClientStorage.save('auth0.is.authenticated', true, { daysUntilExpire: 1 });
+    return codeResult.state;
   }
 
   /**
