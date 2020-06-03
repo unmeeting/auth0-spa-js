@@ -1,9 +1,9 @@
 {
   "author": "Auth0",
-  "name": "unmeeting/auth0-spa-js",
+  "name": "auth0-spa-js",
   "description": "Auth0 SDK for Single Page Applications using Authorization Code Grant Flow with PKCE",
   "license": "MIT",
-  "version": "1.9.2-unm",
+  "version": "1.9.3-unm",
   "main": "dist/lib/auth0-spa-js.cjs.js",
   "types": "dist/typings/index.d.ts",
   "module": "dist/auth0-spa-js.production.esm.js",
@@ -85,12 +85,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/auth0/auth0-spa-js.git"
+    "url": "git://github.com/unmeeting/auth0-spa-js.git"
   },
   "bugs": {
-    "url": "https://github.com/auth0/auth0-spa-js/issues"
+    "url": "https://github.com/unmeeting/auth0-spa-js/issues"
   },
-  "homepage": "https://github.com/auth0/auth0-spa-js#readme",
+  "homepage": "https://github.com/unmeeting/auth0-spa-js#readme",
   "keywords": [
     "auth0",
     "login",
@@ -99,21 +99,6 @@
     "Single Page Application authentication",
     "SPA authentication"
   ],
-  "ccu": {
-    "name": "auth0-spa-js",
-    "cdn": "https://cdn.auth0.com",
-    "mainBundleFile": "auth0-spa-js.production.js",
-    "bucket": "assets.us.auth0.com",
-    "localPath": "dist",
-    "digest": {
-      "hashes": [
-        "sha384"
-      ],
-      "extensions": [
-        ".js"
-      ]
-    }
-  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
